@@ -1,0 +1,20 @@
+#FastAPI + Server
+fastapi
+uvicorn[standard]
+pydantic
+
+#Data & Utilities
+pandas
+rapidfuzz
+
+#HuggingFace Ecosystem
+transformers >= 4.41.0
+accelerate >= 0.30.0
+safetensors >= 0.4.2
+huggingface-hub >= 0.23.0
+
+#Torch with CUDA(if CUDA install in separate pip/yarn command)
+#pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+#Torch with CPU(uncomment to install)
+#torch

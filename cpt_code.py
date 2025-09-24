@@ -12,7 +12,7 @@ class PatientData(BaseModel):
     Surgeries: list[str] | None = None
     
     class Config:
-        extra = Extra.allow   # allow other fields like Diagnosis, Age, etc.
+        extra = 'allow'   # allow other fields like Diagnosis, Age, etc.
 
 def find_cpt_from_csv(surgery: str, df=df_cpt):
     if not surgery:

@@ -11,9 +11,9 @@ app = FastAPI()
 class PatientData(BaseModel):
     Diagnosis: str | None = None
     class Config:
-        extra = Extra.allow   # allow all extra fields
+        extra = 'allow'   # allow all extra fields
 
-def find_icd10_from_csv(diagnosis: str, df=df):
+def find_icd10_from_csv(diagnosis: str):
     if not diagnosis:
         return {"error": "Diagnosis field is empty."}
     
